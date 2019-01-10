@@ -78,3 +78,114 @@
         top: -5px
       &:hover
         color: $accent-blue
+
+.mnu-line
+  font-size: 0
+  position: relative
+  a
+    font-size: 18px
+    text-transform: uppercase
+    padding: 18px 0
+    +mt(.3s)
+    &:hover
+      color: $accent-blue
+
+.main-mnu
+  display: inline-block
+  width: calc(100% - 270px)
+  ul
+    display: flex
+    justify-content: space-around
+    background-color: $accent-creamy
+  a
+    display: inline-block
+
+.catalog-href
+  background-color: $accent-lightcreamy
+  text-align: center
+  &:hover
+    .cat-ham, .cat-ham:before, .cat-ham:after
+      background-color: $accent-blue
+
+.cat-ham
+  top: -4px
+  position: relative
+  display: inline-block
+  width: 20px
+  height: 4px
+  background-color: $text-color
+  margin-right: 12px
+  +mt(.3s)
+  &:before, &:after
+    position: absolute
+    content: ''
+    width: 20px
+    height: 4px
+    background-color: $text-color
+    +mt(.3s)
+  &:before
+    top: -7px
+    left: 0
+  &:after
+    bottom: -7px
+    left: 0
+
+.toggle-mnu-wrap
+  background-color: $accent-creamy
+  text-align: center
+  width: 20%
+  height: 57px
+  position: relative
+  top: 2px
+
+.toggle-mnu
+  display: inline-block
+  width: 28px
+  height: 28px
+  position: relative
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+  span:after
+    top: 18px
+  span
+    position: relative
+    display: block
+  span, span:after, span:before
+    width: 100%
+    height: 3px
+    background-color: $text-color
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+  &.on span
+    background-color: transparent
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
+
+.mobile-mnu
+  display: none
+  padding: 15px 0 30px
+  text-align: center
+  background-color: $accent-creamy
+  li
+    padding: 12px 0
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      height: 1px
+      width: 50%
+      bottom: 0
+      left: 25%
+      background-color: $accent-blue
+    a
+      display: block
+      padding: 0
+
+
+
