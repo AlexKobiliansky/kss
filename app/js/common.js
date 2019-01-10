@@ -1,5 +1,6 @@
 $(function() {
 
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

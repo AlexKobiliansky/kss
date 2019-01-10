@@ -1,0 +1,80 @@
+.top-line
+  padding: 25px 0
+  .container
+    position: relative
+  .logo
+    display: inline-block
+    margin-right: 80px
+    vertical-align: top
+.header-info
+  display: inline-block
+  font-size: 24px
+  line-height: 1
+  .socials
+    display: inline-block
+    color: $accent-darkcreamy
+    a
+      display: inline-block
+      margin-right: 5px
+  .top-phones
+    display: inline-block
+    font-size: 20px
+    position: relative
+    margin-left: 20px
+    &:before
+      content: '\f10b'
+      font-family: FontAwesome
+      font-size: 30px
+      color: $accent-blue
+      position: relative
+      top: 3px
+      margin-right: 5px
+      display: inline-block
+    a
+      +mt(.3s)
+      white-space: nowrap
+      &:hover
+        color: $accent-blue
+  .bottom
+    margin-top: 28px
+    font-size: 16px
+
+.top-user
+  float: right
+  &-name
+    position: relative
+    display: block
+    text-align: right
+    &:after
+      content: '\f2c0'
+      font-family: FontAwesome
+      display: inline-block
+      margin-left: 10px
+      font-size: 22px
+      color: $accent-darkcreamy
+      position: relative
+      top: 3px
+  .user-abilities
+    margin-top: 28px
+    font-size: 28px
+    text-align: right
+    color: $accent-darkcreamy
+    a
+      display: inline-block
+      margin-left: 15px
+      position: relative
+      +mt(.3s)
+      &:after
+        +mt(.3s)
+        content: attr(data-content)
+        min-width: 25px
+        position: absolute
+        background-color: $accent-blue
+        color: #fff
+        line-height: 1
+        font-size: 16px
+        text-align: center
+        right: -11px
+        top: -5px
+      &:hover
+        color: $accent-blue

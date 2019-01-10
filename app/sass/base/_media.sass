@@ -8,14 +8,36 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .top-line
+    .logo
+      margin-right: 25px
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .header-info
+    position: absolute
+    top: 130px
+    right: 15px
+    .socials
+      display: block
+      text-align: right
+    .bottom
+      margin-top: 15px
 
-// ≥576px
+// ≥480px
 +media-breakpoint-down(xs)
-
-
+  .header-info
+    display: block
+    width: calc(100% - 30px)
+    left: 15px
+    .socials
+      display: block
+      text-align: left
+    .top-phones
+      display: block
+      font-size: 16px
+      margin-left: 0
+      margin-top: 10px
 /*==========  Mobile First  ==========*/
 
 // ≤576px
