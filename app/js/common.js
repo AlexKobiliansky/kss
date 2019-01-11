@@ -6,6 +6,15 @@ $(function() {
         return false;
     });
 
+    $('.prod-slider').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        items: 1
+    });
+
+    $('#prod-mnu').smartmenus();
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

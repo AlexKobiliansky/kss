@@ -11,6 +11,18 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .intro
+    .container
+      display: block
+    .prod-list
+      width: 100%
+      .prod-mnu
+        width: 50%
+
+  .prod-slider
+    display: block!important
+    width: 100%
+
   .top-line
     .logo
       margin-right: 25px
@@ -20,6 +32,26 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .intro
+    .prod-list
+      .prod-mnu
+        width: 100%
+
+  .sm-simple
+    ul
+      a, a.highlighted, a:active, a:focus, a:hover
+        padding-top: 4px
+        padding-bottom: 4px
+        padding-left: 35px
+
+  .intro
+    top: 117px
+
+  .prod-slide
+    padding-left: 25px
+    &-content
+      max-width: 320px
+
   .mnu-line
     top: 117px
 
@@ -40,6 +72,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .prod-slide
+    padding-right: 25px
+    &-desc
+      font-size: 14px
+      max-height: 106px
+
+  .prod-slider
+    .owl-dots
+      right: auto
+      top: auto
+      bottom: 25px
+      width: 100%
+      text-align: center
+      button.owl-dot
+        display: inline-block
+        margin-bottom: 0
+        margin-right: 8px
+
+
   .header-info
     display: block
     width: calc(100% - 30px)

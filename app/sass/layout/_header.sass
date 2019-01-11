@@ -188,4 +188,102 @@
       padding: 0
 
 
+.intro
+  font-size: 0
+  position: relative
+  .container
+    display: flex
+
+.prod-slider
+  display: inline-block!important
+  width: calc(100% - 270px)
+  position: relative
+  .owl-dots
+    position: absolute
+    right: 30px
+    top: 30px
+    button.owl-dot
+      width: 18px
+      height: 18px
+      border-radius: 50%
+      background-color: #a7aab1
+      margin-bottom: 8px
+      display: block
+      &.active
+        background-color: $accent-blue
+
+
+.prod-slide
+  padding: 45px 0 70px 85px
+  +bg-cover()
+  &-content
+    max-width: 420px
+  &-title
+    color: #fff
+    font-size: 26px
+    margin-bottom: 15px
+  &-desc
+    font-size: 16px
+    color: #737581
+    line-height: 1.5
+    max-height: 96px
+    overflow: hidden
+  .btn
+    font-size: 16px
+    margin-top: 25px
+
+.prod-list
+  font-size: 16px
+  vertical-align: top
+  background-color: $accent-blue
+  color: #fff
+
+.sm-simple
+  background-color: $accent-blue
+  border: none
+  box-shadow: none
+  padding-top: 20px
+  li
+    border: none
+  ul
+    background-color: $accent-blue
+    border: none
+    color: #fff
+    box-shadow: none
+    a, a.highlighted, a:active, a:focus, a:hover
+      padding-right: 50px!important
+
+.sm-simple.sm-vertical li
+  border: none
+
+.sm-simple a, .sm-simple a.highlighted, .sm-simple a:active, .sm-simple a:focus, .sm-simple a:hover
+  color: #fff
+  border: none
+  background-color: $accent-blue
+  padding-top: 15px
+  padding-bottom: 15px
+  padding-right: 50px
+  position: relative
+
+.sm-simple.sm-vertical a, .sm-simple a.highlighted,
+  .sub-arrow
+    right: 15px
+    left: auto
+    width: 30px
+    background: none
+  &:hover
+    .sub-arrow:before
+      content: '\f054'
+
+.sm-simple.sm-vertical>li
+  border-color: transparent
+
+.sm-simple a, .sm-simple a.highlighted,
+  .sub-arrow::before
+    content: '\f054'
+    font-family: FontAwesome
+    color: #333
+    position: absolute
+
+
 
