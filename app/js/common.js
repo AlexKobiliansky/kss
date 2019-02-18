@@ -15,6 +15,22 @@ $(function() {
 
     $('#prod-mnu').smartmenus();
 
+    $('.prod-item-rate').raty({
+        path: "libs/raty/img/"
+    });
+
+    function heightses() {
+        if ($(window).width()>480) {
+            $('.prod-item-img').height('auto').equalHeights();
+        }
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

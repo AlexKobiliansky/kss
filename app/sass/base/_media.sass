@@ -9,8 +9,17 @@
     a
       font-size: 16px
 
+  .prod-item
+    .ends
+      font-size: 13px
+
 // ≥992px
 +media-breakpoint-down(md)
+
+  .prod-item
+    .ends
+      font-size: 14px
+
   .intro
     .container
       display: block
@@ -33,6 +42,8 @@
 // ≥768px
 +media-breakpoint-down(sm)
   .intro
+    top: 117px
+    margin-bottom: 150px
     .prod-list
       .prod-mnu
         width: 100%
@@ -43,9 +54,6 @@
         padding-top: 4px
         padding-bottom: 4px
         padding-left: 35px
-
-  .intro
-    top: 117px
 
   .prod-slide
     padding-left: 25px
@@ -72,6 +80,9 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .update
+    right: 15px
 
   .prod-slide
     padding-right: 25px
