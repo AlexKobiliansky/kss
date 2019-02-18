@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function(){
 
     $(".toggle-mnu").click(function() {
         $(this).toggleClass("on");
@@ -19,17 +19,7 @@ $(function() {
         path: "libs/raty/img/"
     });
 
-    function heightses() {
-        if ($(window).width()>480) {
-            $('.prod-item-img').height('auto').equalHeights();
-        }
-    }
 
-    $(window).resize(function() {
-        heightses();
-    });
-
-    heightses();
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
@@ -44,4 +34,27 @@ $(function() {
         });
         return false;
     });
+
+
+
+
+        function heightses() {
+            if ($(window).width()>=480) {
+                $('.news-item-title').height('auto').equalHeights();
+                $(window).on('load',(function() {
+                    $('.prod-item-img').height('auto').equalHeights();
+                }));
+            }
+        }
+
+        $(window).resize(function() {
+            heightses();
+        });
+
+        heightses();
+
+
+
 });
+
+

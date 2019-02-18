@@ -1,0 +1,54 @@
+.s-news
+  text-align: center
+  .container
+    background-color: $accent-creamy
+    padding: 60px 0 50px
+
+.news-wrap
+  margin-top: 25px
+  margin-bottom: 25px
+  display: flex
+  padding: 0 70px
+  justify-content: space-between
+  flex-wrap: wrap
+
+.news-item
+  display: block
+  width: 32%
+  &-img
+    position: relative
+    height: 200px
+    +bg-cover
+    &:after
+      content: ''
+      position: absolute
+      background-color: rgba($accent-blue, .5)
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      +mt(.3s)
+      opacity: 0
+    .btn
+      position: absolute
+      width: 130px
+      height: 36px
+      top: calc(50% - 18px)
+      left: calc(50% - 65px)
+      z-index: 4
+      opacity: 0
+      &:hover
+        color: #fff
+        border-color: #fff
+        background-color: $accent-blue
+  &-title
+    background-color: #fff
+    padding: 15px 15px 45px
+    font-size: 20px
+    margin-bottom: 30px
+  &:hover
+    .news-item-img
+      &:after
+        opacity: 1
+      .btn
+        opacity: 1
