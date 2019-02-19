@@ -1,4 +1,7 @@
 form
+  label
+    position: relative
+
   input
     border: 1px solid $accent-darkcreamy
     padding: 8px 15px
@@ -27,3 +30,24 @@ form
     margin-bottom: 0
   input
     width: 100%
+
+.subscribe
+  font-size: 14px
+  label
+    width: 100%
+  input
+    width: 100%
+    border: none
+
+.help-block
+  font-size: 10px
+  position: absolute
+  color: red
+  left: 0
+
+label.has-error
+  input
+    color: red
+    border-color: red
+    &::placeholder
+      color: red

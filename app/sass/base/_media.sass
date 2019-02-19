@@ -19,6 +19,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .foot-item-wrap:nth-child(even)
+    .foot-item
+      border-right: none
+
+  .foot-item
+    margin-bottom: 30px
+
   .news-item
     width: 48%
 
@@ -47,6 +54,16 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+
+
+  .foot-item
+    background-image: none
+
+  .foot-item-wrap:last-child
+    .foot-item
+      margin-bottom: 0
+
   .news-wrap
     padding: 0 15px
 
@@ -89,6 +106,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .foot-item
+    border-right: none
+    text-align: center
+    margin-bottom: 40px
+    h4
+      text-align: center
+  .foot-3
+    padding-right: 0
 
   .news-item
     width: 100%

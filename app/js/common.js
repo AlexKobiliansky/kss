@@ -21,6 +21,11 @@ $(document).ready(function(){
 
 
 
+    $.validate({
+        form : '.validate-form',
+        scrollToTopOnError: false
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
