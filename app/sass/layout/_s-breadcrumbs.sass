@@ -1,0 +1,21 @@
+.s-breadcrumbs
+  padding: 40px 0
+  font-size: 12px
+  a
+    display: inline-block
+    padding: 0 8px
+    position: relative
+    +mt(.3s)
+    &:first-child
+      padding-left: 0
+    &:last-child
+      color: $accent-blue
+      &:after
+        display: none
+    &:after
+      content: '/'
+      position: absolute
+      right: -3px
+      color: #000
+    &:hover, &:focus, &:active
+      color: $accent-blue
